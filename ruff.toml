@@ -1,0 +1,25 @@
+# Developer Notes:
+# - Path: quality_configs/ruff.toml
+# - Purpose: Basic Ruff configuration for the MVP.
+# - Selects common Pyflakes, Pycodestyle errors, and warnings.
+# - Specifies target Python version.
+# - Source: T-010 development.
+# - Evidence: PRO PLAN v4.0 (T-010 requirements).
+
+# Ruff configuration file (ruff.toml)
+target-version = "py312"
+select = ["E", "F", "W"]
+
+# Add this line to match the black configuration
+line-length = 99
+
+# Ignore specific rules if necessary, e.g.:
+# ignore = ["E501"] # Line too long
+
+# You can also specify line length, exclude directories, etc.
+# line-length = 88
+# exclude = [
+#     ".bzr",
+#     ".direnv",
+#     # ... other common exclusions
+# ]
